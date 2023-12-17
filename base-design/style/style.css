@@ -133,3 +133,49 @@ ul {
 	grid-template-columns: repeat(2, 1fr);
 	column-gap: 2rem;
 }
+
+/* Header Section Start */
+header {
+	position: fixed;
+	width: 100%;
+	padding: 20px 0;
+	z-index: 1000;
+}
+
+header.active {
+	background-color: var(--white-color);
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+header .container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.logo {
+	width: 150px;
+	height: auto;
+	display: flex;
+	align-items: center;
+}
+
+.menu {
+	white-space: nowrap;
+	transition: 0.5s;
+	z-index: 999;
+	position: relative;
+}
+
+.menu-item {
+	display: inline-block;
+}
+
+.menu_link {
+	padding: 5px 10px;
+	position: relative;
+	transition: 0.4s;
+	color: var(--primary-color);
+	font-weight: 500;
+}
+/* Header Section End */
