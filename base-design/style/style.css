@@ -100,10 +100,10 @@ ul {
 	font-weight: 600;
 	text-transform: capitalize;
 	line-height: 0.8;
-	color: var(--black-color);
+	color: var(--white-color);
 	position: relative;
 	margin-bottom: 100px;
-	padding-bottom: 80px;
+	padding-bottom: 25px;
 }
 
 .section_title::before {
