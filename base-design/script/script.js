@@ -7,12 +7,12 @@ iconToggle.addEventListener("click", () => {
 	navbarMenu.classList.toggle("active");
 });
 
-iconClose.addEventListener("click", () => {
+closeIcon.addEventListener("click", () => {
 	navbarMenu.classList.remove("active");
 });
 
-menuLinks.forEach((menuLink) => {
+menuLinks.forEach((menuLink) => [
 	menuLink.addEventListener("click", () => {
 		navbarMenu.classList.remove("active");
-	});
-});
+	}),
+]);

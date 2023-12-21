@@ -155,7 +155,7 @@ header .container {
 }
 
 .logo {
-	width: 150px;
+	width: 130px;
 	height: auto;
 	display: flex;
 	align-items: center;
@@ -168,7 +168,7 @@ header .container {
 	position: relative;
 }
 
-.menu-item {
+.menu_item {
 	display: inline-block;
 }
 
@@ -249,7 +249,7 @@ header .container {
 
 	.menu_item {
 		display: block;
-		margin: 20px 0;
+		margin: 50px 0;
 	}
 
 	.menu_link {
