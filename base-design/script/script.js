@@ -16,3 +16,10 @@ menuLinks.forEach((menuLink) => [
 		navbarMenu.classList.remove("active");
 	}),
 ]);
+
+function scrollHeader() {
+	const header = document.getElementById("header");
+	this.scrollY >= 20 ? header.classList.add("active") : header.classList.remove("active");
+}
+
+window.addEventListener("scroll", scrollHeader);

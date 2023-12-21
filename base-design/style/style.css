@@ -86,7 +86,7 @@ ul {
 .btn:hover {
 	background-color: transparent;
 	border: 2px solid var(--white-color);
-	color: var(--secondary-color);
+	color: var(--white-color);
 }
 
 .btn i {
@@ -144,8 +144,8 @@ header {
 }
 
 header.active {
-	background-color: var(--white-color);
-	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+	background-color: var(--primary-color);
+	box-shadow: 0 5px 10px rgba(12, 12, 12, 0.619);
 }
 
 header .container {
@@ -264,3 +264,106 @@ header .container {
 		display: block;
 	}
 }
+
+/* Hero Section Start */
+.hero {
+	padding-top: 114px;
+	position: relative;
+	display: block;
+}
+
+.hero_container {
+	align-items: center;
+}
+
+.hero_container h4 {
+	font-size: 28px;
+	font-weight: 600;
+	color: var(--white-color);
+	text-transform: uppercase;
+}
+
+.hero_container h1 {
+	font-size: 40px;
+	font-weight: 600;
+	font-family: var(--secondary-font);
+	white-space: nowrap;
+	margin-bottom: 10px;
+	color: var(--white-color);
+}
+
+.hero_container p {
+	margin: 10px 0 40px;
+	color: var(--white-color);
+	font-size: 18px;
+}
+
+.hero_container .btn {
+	margin-top: 30px;
+	display: inline-flex;
+	align-items: center;
+}
+
+.hero-social {
+	display: flex;
+	column-gap: 20px;
+}
+
+.hero-social a {
+	font-size: 22px;
+	display: inline-flex;
+	width: 50px;
+	height: 50px;
+	align-items: center;
+	justify-content: center;
+	background-color: var(--white-color);
+	color: var(--black-color);
+	transition: 0.3s;
+	border-radius: 50%;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.hero-social a:hover {
+	color: var(--primary-color);
+	box-shadow: 0 0 10px var(--black-color);
+}
+
+.hero-img {
+	text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+	.hero_content h4 {
+		font-size: 16px;
+	}
+
+	.hero_content h1 {
+		font-size: 32px;
+	}
+
+	.hero_content p {
+		font-size: 15px;
+	}
+}
+
+@media screen and (max-width: 576px) {
+	.hero_container {
+		grid-template-columns: 1fr;
+		row-gap: 2rem;
+		justify-content: center;
+	}
+
+	.hero_content {
+		order: 2;
+		text-align: center;
+	}
+
+	.hero-social {
+		justify-content: center;
+	}
+
+	.hero-img {
+		text-align: center;
+	}
+}
+/* Hero Section End */
