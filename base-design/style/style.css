@@ -242,4 +242,25 @@ header .container {
 		transform: translateX(110%);
 		box-shadow: -10px 0 20px rgba(0, 0, 0, 0.15);
 	}
+
+	.menu.active {
+		transform: translateX(0);
+	}
+
+	.menu_item {
+		display: block;
+		margin: 20px 0;
+	}
+
+	.menu_link {
+		color: var(--white-color);
+	}
+
+	.toggle_icon {
+		display: block;
+	}
+
+	.close_icon {
+		display: block;
+	}
 }
