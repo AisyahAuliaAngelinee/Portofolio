@@ -484,7 +484,7 @@ header .container {
 	justify-content: center;
 }
 
-.resume_wrap-icon i {
+.resume_wrap-icon ion-icon {
 	font-size: 25px;
 	color: var(--primary-color);
 }
