@@ -101,7 +101,7 @@ ul {
 	line-height: 0.8;
 	color: var(--white-color);
 	position: relative;
-	margin-bottom: 15px;
+	margin-bottom: 35px;
 	padding-bottom: 25px;
 }
 
@@ -433,3 +433,78 @@ header .container {
 	}
 }
 /* About Section End */
+
+/* Resume Section Start */
+.resume_container {
+	grid-template-columns: 1fr 5fr;
+}
+
+.resume_tabs ul {
+	position: sticky;
+	top: 150px;
+	position: -webkit-sticky;
+}
+
+.resume_tabs ul li a {
+	font-weight: 600;
+	margin-bottom: 10px;
+	display: block;
+	color: var(--white-color);
+	position: relative;
+	transition: 0.3s;
+}
+
+.page {
+	margin-bottom: 70px;
+}
+
+.page_heading {
+	font-size: 25px;
+	color: var(--white-color);
+	margin-bottom: 25px;
+}
+
+.resume_wrap {
+	background-color: var(--primary-color);
+	margin-bottom: 15px;
+	padding: 40px 30px;
+	display: flex;
+	position: relative;
+	border-radius: 10px;
+	transition: 0.3s;
+}
+
+.resume_wrap-icon {
+	background-color: var(--white-color);
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.resume_wrap-icon i {
+	font-size: 25px;
+	color: var(--primary-color);
+}
+
+.resume_wrap-content {
+	width: calc(100% - 100px);
+	padding: 0 0 10px 10px;
+}
+
+.resume_wrap-content h4 {
+	color: var(--white-color);
+}
+
+.resume_wrap-content .position {
+	color: var(--white-color);
+}
+
+.resume_wrap .date {
+	font-weight: 600;
+	font-size: 1.4rem;
+	color: var(--white-color);
+}
+/* Resume Section End */
