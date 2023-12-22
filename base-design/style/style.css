@@ -83,7 +83,7 @@ ul {
 }
 
 .btn:hover {
-	background-color: transparent;
+	background-color: var(--primary-color);
 	border: 2px solid var(--white-color);
 	color: var(--white-color);
 }
