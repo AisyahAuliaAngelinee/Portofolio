@@ -17,7 +17,7 @@ const Logo = () => {
 						scale: 1.2,
 					}}
 				>
-					3D
+					VC
 				</MotionLink>
 			</div>
 		</>

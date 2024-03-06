@@ -5,8 +5,8 @@ import Navbar from "@/components/Navbar";
 const montserrat = Montserrat({ subsets: ["latin"], variable: "--font-mont" });
 
 export const metadata = {
-	title: "Portofolio",
-	description: "Personal Portofolio Website",
+	title: "V.Clarishna Portofolio",
+	description: "Vincentius Clarishna Personal Portofolio Website",
 };
 
 export default function RootLayout({ children }) {
