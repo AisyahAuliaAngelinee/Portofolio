@@ -26,7 +26,7 @@ export const LinkArrow = ({ className, ...rest }) => (
 );
 
 export const CircularText = ({ className, ...rest }) => (
-	<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" viewBox="0 0 1080 1080" enable-background="new 0 0 1080 1080" xml:space="preserve" className={`w-full h-auto ${className}`} {...rest}>
+	<svg width="496" height="496" viewBox="0 0 496 496" xmlSpace="preserve" className={`w-full h-auto ${className}`} {...rest}>
 		<path
 			fill="#000000"
 			opacity="1.000000"
