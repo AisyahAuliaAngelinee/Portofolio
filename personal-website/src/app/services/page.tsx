@@ -1,9 +1,9 @@
-function page() {
+function Services() {
 	return (
 		<>
-			<div>page</div>
+			<div>services page</div>
 		</>
 	);
 }
 
-export default page;
+export default Services;
