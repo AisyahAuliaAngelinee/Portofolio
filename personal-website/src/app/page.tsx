@@ -1,7 +1,7 @@
 export default function Home() {
 	return (
 		<>
-			<main>Homepage</main>
+			<main style={{ userSelect: "none" }}>Homepage</main>
 		</>
 	);
 }
