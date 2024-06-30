@@ -8,11 +8,11 @@ const stats = [
 		text: "Month of experience",
 	},
 	{
-		number: 3,
+		number: 4,
 		text: "Projects Completed",
 	},
 	{
-		number: 9,
+		number: 8,
 		text: "Programming Languages",
 	},
 	{
@@ -21,10 +21,30 @@ const stats = [
 	},
 ];
 
+interface statsProp {
+	number: number;
+	text: string;
+}
+
 const Stats = () => {
 	return (
 		<>
-			<section>Stats</section>
+			<section>
+				<div className="container mx-auto">
+					<div className="flex flex-wrap gap-6 max-w-[80dvw] mx-auto xl:max-w-none">
+						{stats.map((item: statsProp, index: number) => {
+							return (
+								<>
+									<div key={index} className="flex-1 flex gap-4 items-center justify-center xl:justify-start">
+										<CountUp end={item.number} duration={5} delay={2} className="text-4xl xl:text-6xl font-extrabold" />
+										<p>{item.text}</p>
+									</div>
+								</>
+							);
+						})}
+					</div>
+				</div>
+			</section>
 		</>
 	);
 };
