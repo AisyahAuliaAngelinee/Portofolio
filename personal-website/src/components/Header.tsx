@@ -18,7 +18,7 @@ const Header = () => {
 					</Link>
 
 					{/* desktop navbar */}
-					<div className="hidden xl:flex items-center gap-8">
+					<div className="hidden xl:flex items-center gap-8 hover:transition-all duration-500">
 						<Navbar />
 						<Link href={"/contact"}>
 							<Button>Hire me</Button>
