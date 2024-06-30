@@ -4,6 +4,7 @@ import { FiDownload } from "react-icons/fi";
 // components
 import Social from "@/components/Social";
 import Photo from "@/components/Photo";
+import Stats from "@/components/Stats";
 
 const Home = () => {
 	return (
@@ -16,7 +17,7 @@ const Home = () => {
 							<span className="text-xl">Frontend Developer</span>
 							<h1 className="h1 mb-6">
 								Hello I'm <br />
-								<span className="text-accent">Vincentius Clarishna</span>
+								<span className="text-accent xl:text-[70px]">Vincentius Clarishna</span>
 							</h1>
 							<p className="max-w-[500px] mb-9 text-white/80">
 								I excel in creating elegant digital experiences with stunning design and cutting-edge technology, proficient in multiple programming languages to deliver innovative
@@ -47,6 +48,8 @@ const Home = () => {
 						</div>
 					</div>
 				</div>
+
+				<Stats />
 			</section>
 		</>
 	);
