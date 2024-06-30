@@ -8,12 +8,12 @@ const stats = [
 		text: "Month of experience",
 	},
 	{
-		number: 4,
+		number: 3,
 		text: "Projects Completed",
 	},
 	{
 		number: 9,
-		text: "Technologies Mastered",
+		text: "Programming Languages",
 	},
 	{
 		number: 1486,
