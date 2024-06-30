@@ -9,7 +9,7 @@ const PageTransition = ({ children }: { children: any }) => {
 	return (
 		<>
 			<AnimatePresence>
-				<div key={pathname}>
+				<div key={pathname} style={{ userSelect: "none" }}>
 					<motion.div
 						initial={{ opacity: 1 }}
 						animate={{
