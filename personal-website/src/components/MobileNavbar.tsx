@@ -39,7 +39,7 @@ const MobileNavbar = () => {
 	return (
 		<>
 			<Sheet>
-				<SheetTrigger className="flex justify-center items-center">
+				<SheetTrigger className="flex justify-center items-center" style={{ userSelect: "none" }}>
 					<CiMenuFries className="text-[32px] text-accent" />
 				</SheetTrigger>
 				<SheetContent className="flex flex-col">
