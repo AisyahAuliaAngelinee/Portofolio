@@ -4,11 +4,11 @@ import { FaGithub, FaLinkedinIn, FaInstagram } from "react-icons/fa";
 const socials = [
 	{
 		icons: <FaGithub />,
-		path: "",
+		path: "https://github.com/AisyahAuliaAngelinee",
 	},
 	{
 		icons: <FaLinkedinIn />,
-		path: "",
+		path: "https://www.linkedin.com/in/vincentius-clarishna/",
 	},
 	{
 		icons: <FaInstagram />,
@@ -28,7 +28,7 @@ const Social = ({ containerStyle, iconsStyle }: { containerStyle?: string; icons
 				{socials.map((item: socialsProp, index: number) => {
 					return (
 						<>
-							<Link href={item.path} key={index} className={iconsStyle}>
+							<Link href={item.path} target="_blank" rel="noopener noreferrer" key={index} className={iconsStyle}>
 								{item.icons}
 							</Link>
 						</>
