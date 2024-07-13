@@ -5,6 +5,7 @@ import Link from "next/link";
 
 const services = [
 	{
+		id: 1,
 		num: "01",
 		title: "Web Developement",
 		description:
@@ -12,6 +13,7 @@ const services = [
 		href: "",
 	},
 	{
+		id: 2,
 		num: "02",
 		title: "Frontend Development",
 		description:
@@ -19,6 +21,7 @@ const services = [
 		href: "",
 	},
 	{
+		id: 3,
 		num: "03",
 		title: "Fullstack Development",
 		description:
@@ -26,6 +29,13 @@ const services = [
 		href: "",
 	},
 ];
+
+interface serviceProps {
+	id: number;
+	num: string;
+	title: string;
+	description: string;
+}
 
 function Services() {
 	return (
