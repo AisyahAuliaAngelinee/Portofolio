@@ -10,10 +10,10 @@ const socials = [
 		icons: <FaLinkedinIn />,
 		path: "https://www.linkedin.com/in/vincentius-clarishna/",
 	},
-	{
-		icons: <FaInstagram />,
-		path: "",
-	},
+	// {
+	// 	icons: <FaInstagram />,
+	// 	path: "",
+	// },
 ];
 
 interface socialsProp {
