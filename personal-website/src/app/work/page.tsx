@@ -110,7 +110,7 @@ const Work = () => {
 									{project.category} project
 								</h2>
 								<p className="text-white/60">{project.description}</p>
-								<ul className="flex gap-4">
+								<ul className="flex gap-4 pb-2">
 									{project.stack.map((dt: stackProps, index: number) => (
 										<li key={index} className="text-xl text-accent">
 											<TooltipProvider delayDuration={100}>
@@ -126,6 +126,33 @@ const Work = () => {
 										</li>
 									))}
 								</ul>
+								<div className="border border-white/20"></div>
+								<div className="flex items-center gap-4 pt-2">
+									<Link href={project.link} target="_blank">
+										<TooltipProvider delayDuration={100}>
+											<Tooltip>
+												<TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
+													<BsArrowUpRight className="text-white text-3xl group-hover:text-accent" />
+												</TooltipTrigger>
+												<TooltipContent>
+													<p>Visit project</p>
+												</TooltipContent>
+											</Tooltip>
+										</TooltipProvider>
+									</Link>
+									<Link href={project.github} target="_blank">
+										<TooltipProvider delayDuration={100}>
+											<Tooltip>
+												<TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
+													<BsGithub className="text-white text-3xl group-hover:text-accent" />
+												</TooltipTrigger>
+												<TooltipContent>
+													<p>Github repository</p>
+												</TooltipContent>
+											</Tooltip>
+										</TooltipProvider>
+									</Link>
+								</div>
 							</div>
 						</div>
 						<div className="w-full xl:w-[50%]">slider</div>
