@@ -1,6 +1,6 @@
 "use client";
 
-import { Badge, Cap, Golang } from "@/assets";
+import { Badge, Cap } from "@/assets";
 import { FaHtml5, FaCss3, FaJs, FaReact, FaNodeJs } from "react-icons/fa";
 import { SiTailwindcss, SiNextdotjs, SiExpress, SiSequelize, SiPostgresql, SiTypescript } from "react-icons/si";
 import { BiLogoGoLang } from "react-icons/bi";
