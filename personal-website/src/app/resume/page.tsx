@@ -4,6 +4,7 @@ import { Badge, Cap } from "@/assets";
 import { FaHtml5, FaCss3, FaJs, FaReact, FaNodeJs } from "react-icons/fa";
 import { SiTailwindcss, SiNextdotjs, SiExpress, SiSequelize, SiPostgresql, SiTypescript } from "react-icons/si";
 import { BiLogoGoLang } from "react-icons/bi";
+import { TbBrandReactNative } from "react-icons/tb";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
 import { ScrollArea } from "@/components/ui/scroll-area";
@@ -134,6 +135,10 @@ const skills = {
 		{
 			icon: <FaReact />,
 			name: "react.js",
+		},
+		{
+			icon: <TbBrandReactNative />,
+			name: "react native",
 		},
 		{
 			icon: <SiNextdotjs />,

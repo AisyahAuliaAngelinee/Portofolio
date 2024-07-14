@@ -8,15 +8,15 @@ const services = [
 	{
 		id: 1,
 		num: "01",
-		title: "Web Developement",
+		title: "Fullstack Developer",
 		description:
-			"A web developer must be proficient in various programming languages such as HTML, CSS, and JavaScript, as well as understanding responsiveness and accessibility to create attractive and functional websites",
+			"A fullstack developer must possess a wide range of skills, including proficiency in frontend technologies like HTML, CSS, and JavaScript, as well as backend technologies such as Express.js with Node.js, ORM Sequelize, and PostgreSQL database, to create seamless and fully functional web applications",
 		href: "",
 	},
 	{
 		id: 2,
 		num: "02",
-		title: "Frontend Development",
+		title: "Frontend Developer",
 		description:
 			"Frontend development focuses on creating the visual and interactive elements of a website, ensuring that the user interface is both aesthetically pleasing and user-friendly",
 		href: "",
@@ -24,9 +24,17 @@ const services = [
 	{
 		id: 3,
 		num: "03",
-		title: "Fullstack Development",
+		title: "Web Developer",
 		description:
-			"A fullstack developer must possess a wide range of skills, including proficiency in frontend technologies like HTML, CSS, and JavaScript, as well as backend technologies such as Express.js with Node.js, ORM Sequelize, and PostgreSQL database, to create seamless and fully functional web applications",
+			"A web developer must be proficient in various programming languages such as HTML, CSS, and JavaScript, as well as understanding responsiveness and accessibility to create attractive and functional websites",
+		href: "",
+	},
+	{
+		id: 4,
+		num: "04",
+		title: "Mobile Developer",
+		description:
+			"React Native allows cross-platform app development for both Android and iOS using JavaScript and native UI components, offering fast development speed and responsive, native-like performance across both Android and iOS devices.",
 		href: "",
 	},
 ];
