@@ -4,15 +4,26 @@ import { motion } from "framer-motion";
 import React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-import { BsArrowUpRight, BsGithub } from "react-icons/bs";
-import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
+import { BsArrowUpRight, BsGithub, BsFillInboxesFill } from "react-icons/bs";
+import {
+	Tooltip,
+	TooltipContent,
+	TooltipProvider,
+	TooltipTrigger,
+} from "@/components/ui/tooltip";
 import Link from "next/link";
 import Image from "next/image";
 import { FaCss3, FaJs, FaReact } from "react-icons/fa";
-import { SiTailwindcss, SiNextdotjs, SiTypescript, SiShadcnui } from "react-icons/si";
+import {
+	SiTailwindcss,
+	SiNextdotjs,
+	SiTypescript,
+	SiShadcnui,
+} from "react-icons/si";
 import { TbBrandThreejs, TbBrandFramerMotion } from "react-icons/tb";
-import { Thumb1, Thumb2 } from "@/assets";
+import { Thumb1, Thumb2, Thumb3 } from "@/assets";
 import WorkSliderBtn from "@/components/WorkSliderBtn";
+import { usePathname } from "next/navigation";
 
 interface stackProps {
 	icon: any;
@@ -92,8 +103,33 @@ const projects = [
 			},
 		],
 		image: Thumb2,
+		link: "https://vclrshna-portofolio.vercel.app/",
+		github: "https://github.com/AisyahAuliaAngelinee/Portofolio",
+	},
+	{
+		num: "03",
+		category: "frontend",
+		title: "Brrads Industries",
+		description:
+			"Brrads Industries is a merchandise brand offering a range of fashion products including apparel and accessories with modern, high-quality designs. Managed by Reza Auditore, an Indonesian streamer, Brrads Industries represents a dynamic, creative, and authentic community identity.",
+		stack: [
+			{
+				icon: <SiNextdotjs />,
+				name: "next.js",
+			},
+			{
+				icon: <SiTailwindcss />,
+				name: "tailwind.css",
+			},
+			{
+				icon: <SiTypescript />,
+				name: "typescript",
+			},
+			{ icon: <BsFillInboxesFill />, name: "Zustand" },
+		],
+		image: Thumb3,
 		link: "",
-		github: "",
+		github: "https://github.com/AisyahAuliaAngelinee/bradds-industries",
 	},
 ];
 
@@ -122,9 +158,15 @@ const Work = () => {
 					<div className="flex flex-col xl:flex-row xl:gap-[30px]">
 						<div className="w-full xl:w-[50%] xl:h-[460px] flex flex-col xl:justify-between order-2 xl:order-none">
 							<div className="flex flex-col gap-[30px] h-[50%]">
-								<div className="text-8xl leading-none font-extrabold text-transparent text-outline">{project.num}</div>
-								<h2 className="text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500 ease-in-out capitalize">{project.title}</h2>
-								<p className="capitalize text-accent/70">{project.category} Project</p>
+								<div className="text-8xl leading-none font-extrabold text-transparent text-outline">
+									{project.num}
+								</div>
+								<h2 className="text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500 ease-in-out capitalize">
+									{project.title}
+								</h2>
+								<p className="capitalize text-accent/70">
+									{project.category} Project
+								</p>
 								<p className="text-white/60">{project.description}</p>
 								<ul className="flex gap-4">
 									{project.stack.map((dt: stackProps, index: number) => (
@@ -132,7 +174,9 @@ const Work = () => {
 											<TooltipProvider delayDuration={100}>
 												<Tooltip>
 													<TooltipTrigger className="bg-[#232329] rounded-lg w-[50px] h-[50px] flex justify-center items-center group">
-														<div className="text-2xl group-hover:text-white transition-all duration-300 ease-in-out">{dt.icon}</div>
+														<div className="text-2xl group-hover:text-white transition-all duration-300 ease-in-out">
+															{dt.icon}
+														</div>
 													</TooltipTrigger>
 													<TooltipContent>
 														<p className="capitalize">{dt.name}</p>
@@ -172,13 +216,22 @@ const Work = () => {
 							</div>
 						</div>
 						<div className="w-full xl:w-[50%]">
-							<Swiper spaceBetween={30} slidesPerView={1} className="xl:h-[520px] mb-12" onSlideChange={handleSlideChange}>
+							<Swiper
+								spaceBetween={30}
+								slidesPerView={1}
+								className="xl:h-[520px] mb-12"
+								onSlideChange={handleSlideChange}>
 								{projects.map((dt: projectProps, index: number) => (
 									<SwiperSlide key={index} className="w-full">
 										<div className="h-[460px] relative group flex justify-center items-center bg-pink-50/20">
 											<div className="absolute top-0 bottom-0 w-full h-full bg-black/10 z-10"></div>
 											<div className="relative w-full h-full">
-												<Image src={dt.image} alt="project-thumbnail" fill className="object-cover" />
+												<Image
+													src={dt.image}
+													alt="project-thumbnail"
+													fill
+													className="object-cover"
+												/>
 											</div>
 										</div>
 									</SwiperSlide>

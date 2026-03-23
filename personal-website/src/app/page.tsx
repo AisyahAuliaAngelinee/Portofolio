@@ -10,7 +10,11 @@ import Stats from "@/components/Stats";
 
 const Home = () => {
 	const handleDownloadPdf = () => {
-		window.open("https://drive.google.com/file/d/1OQRBGzpqQkq1sD1nO3OOJTYljc36R8BE/view?usp=sharing", "_blank", "noopener noreferrer");
+		window.open(
+			"https://drive.google.com/file/d/1OQRBGzpqQkq1sD1nO3OOJTYljc36R8BE/view?usp=sharing",
+			"_blank",
+			"noopener noreferrer",
+		);
 	};
 
 	return (
@@ -23,16 +27,24 @@ const Home = () => {
 							<span className="text-xl">Frontend Developer</span>
 							<h1 className="h1 mb-6">
 								Hello I'm <br />
-								<span className="text-accent xl:text-[70px]">Vincentius Clarishna</span>
+								<span className="text-accent xl:text-[70px]">
+									Vincentius Clarishna
+								</span>
 							</h1>
 							<p className="max-w-[500px] mb-9 text-white/80">
-								I excel in creating elegant digital experiences with stunning design and cutting-edge technology, proficient in multiple programming languages to deliver innovative
-								solutions and optimal user experiences
+								I excel in creating elegant digital experiences with stunning
+								design and cutting-edge technology, proficient in multiple
+								programming languages to deliver innovative solutions and
+								optimal user experiences
 							</p>
 
 							{/* btn and socials */}
 							<div className="flex flex-col xl:flex-row items-center gap-8">
-								<Button variant={"outline"} size={"lg"} className="flex uppercase items-center gap-2 hover:transition-all duration-500" onClick={handleDownloadPdf}>
+								<Button
+									variant={"outline"}
+									size={"lg"}
+									className="flex uppercase items-center gap-2 hover:transition-all duration-500"
+									onClick={handleDownloadPdf}>
 									<span>Download CV</span>
 									<FiDownload className="text-xl" />
 								</Button>
