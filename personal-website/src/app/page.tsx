@@ -11,7 +11,7 @@ import Stats from "@/components/Stats";
 const Home = () => {
 	const handleDownloadPdf = () => {
 		window.open(
-			"https://drive.google.com/file/d/1oe5Va_XLbCc2MSga08G8hTfyBnqadgsv/view?usp=sharing",
+			"https://drive.google.com/file/d/1XLVzKs3OfGi7P73McL8wGSdSNZ4Do1XJ/view?usp=sharing",
 			"_blank",
 			"noopener noreferrer",
 		);
