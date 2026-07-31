@@ -1,13 +1,19 @@
 import type { Metadata } from "next";
 import { Outfit } from "next/font/google";
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 // Components
 import Header from "@/components/Header";
 import PageTransition from "@/components/PageTransition";
 import StairTransition from "@/components/StairTransition";
 
-const outfit = Outfit({ subsets: ["latin"], weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"], variable: "--font-outfit" });
+const outfit = Outfit({
+	subsets: ["latin"],
+	weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+	variable: "--font-outfit",
+});
 
 export const metadata: Metadata = {
 	title: "Portofolio.",
@@ -25,6 +31,8 @@ export default function RootLayout({
 				<Header />
 				<StairTransition />
 				<PageTransition>{children}</PageTransition>
+				<Analytics />
+				<SpeedInsights />
 			</body>
 		</html>
 	);
